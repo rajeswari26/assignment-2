@@ -1,0 +1,40 @@
+#assigning elements to different lists
+NumList = []
+j = 0
+
+Number = int(input("Please enter the Total Number of List Elements: "))
+for i in range(1, Number + 1):
+    value = int(input("Please enter the Value of %d Element : " %i))
+    NumList.append(value)
+
+print("\nPositive Numbers in this List are : ")
+while(j < Number):
+    if(NumList[j] >= 0):
+        print(NumList[j], end = '   ')
+    j = j + 1
+    
+    
+#accessing elements from a tuple
+tup1 = ('physics', 'chemistry', 1997, 2000);
+tup2 = (1, 2, 3, 4, 5, 6, 7 );
+print "tup1[0]: ", tup1[0];
+print "tup2[1:5]: ", tup2[1:5];
+
+
+
+
+#deleting different dictionary elements
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+
+
+
+    
+    
+    
+    
